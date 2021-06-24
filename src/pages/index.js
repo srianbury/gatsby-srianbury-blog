@@ -3,26 +3,11 @@ import Layout from "../components/layout";
 
 const IndexPage = () => (
   <Layout title="Home">
+    <h1>Hello, there!</h1>
     <p>
-      This starter was created by following the{" "}
-      <a
-        href="https://v2.gatsbyjs.com/docs/tutorial/"
-        target="_blank"
-        rel="noreferrer"
-      >
-        Gatsby v2
-      </a>{" "}
-      tutorial with a few adjustments. It has the following features that I
-      typically need out of the box:
+      I'm hoping to write some techy stuff, not sure yet though. We'll see where
+      this goes. Until then {"<insert gif of someone waving here>"}
     </p>
-    <ul>
-      <li>Headers</li>
-      <li>Layout</li>
-      <li>SEO</li>
-      <li>Content Sourcing from markdown (blogs)</li>
-      <li>Access to images from markdown frontmatter</li>
-      <li>Markdown code formatting</li>
-    </ul>
   </Layout>
 );
 

@@ -25,11 +25,22 @@ const Layout = ({ title, children }) => {
   return (
     <>
       <Seo title={title} />
-      <div>
-        <Header siteTitle={data.site.siteMetadata.title || `Title`} />
-        <div className="container bg-red-300">
-          <main>{children}</main>
-        </div>
+      <div className="flex flex-col h-screen justify-between">
+        <header className="border-b-2 border-black py-2 mb-2">
+          <div className="container">
+            <Header siteTitle={data.site.siteMetadata.title || `Title`} />
+          </div>
+        </header>
+        <main className="mb-auto">
+          <div className="container">
+            <main>{children}</main>
+          </div>
+        </main>
+        <footer className="py-10 border-t-2 border-black">
+          <div className="container">
+            <h1 className="text-4xl">footer</h1>
+          </div>
+        </footer>
       </div>
     </>
   );
