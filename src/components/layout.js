@@ -9,7 +9,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import { useStaticQuery, graphql } from "gatsby";
 import Header from "./header";
-import SEO from "./seo";
+import Seo from "./seo";
 
 const Layout = ({ title, children }) => {
   const data = useStaticQuery(graphql`
@@ -24,15 +24,10 @@ const Layout = ({ title, children }) => {
 
   return (
     <>
-      <SEO title={title} />
-      <div
-        style={{
-          marginLeft: "100px",
-          marginRight: "100px",
-        }}
-      >
+      <Seo title={title} />
+      <div>
         <Header siteTitle={data.site.siteMetadata.title || `Title`} />
-        <div>
+        <div className="container bg-red-300">
           <main>{children}</main>
         </div>
       </div>

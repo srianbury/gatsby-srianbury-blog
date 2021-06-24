@@ -5,17 +5,18 @@
   "version": "0.1.0",
   "author": "srianbury",
   "dependencies": {
-    "gatsby": "^2.24.67",
+    "gatsby": "^3.7.2",
     "gatsby-image": "^2.4.20",
-    "gatsby-plugin-manifest": "^2.4.33",
-    "gatsby-plugin-offline": "^3.2.30",
-    "gatsby-plugin-react-helmet": "^3.3.12",
-    "gatsby-plugin-sharp": "^2.6.38",
-    "gatsby-remark-images": "^5.3.0",
+    "gatsby-plugin-image": "^1.7.1",
+    "gatsby-plugin-manifest": "^3.7.1",
+    "gatsby-plugin-offline": "^4.7.1",
+    "gatsby-plugin-react-helmet": "^4.7.1",
+    "gatsby-plugin-sharp": "^3.7.1",
+    "gatsby-remark-images": "^5.4.1",
     "gatsby-remark-prismjs": "^5.3.0",
-    "gatsby-source-filesystem": "^2.3.32",
+    "gatsby-source-filesystem": "^3.7.1",
     "gatsby-transformer-remark": "^4.3.0",
-    "gatsby-transformer-sharp": "^2.5.16",
+    "gatsby-transformer-sharp": "^3.7.1",
     "prismjs": "^1.23.0",
     "prop-types": "^15.7.2",
     "react": "^16.12.0",
@@ -23,7 +24,11 @@
     "react-helmet": "^6.1.0"
   },
   "devDependencies": {
-    "prettier": "2.1.2"
+    "autoprefixer": "^10.2.6",
+    "gatsby-plugin-postcss": "^4.7.1",
+    "postcss": "^8.3.5",
+    "prettier": "2.1.2",
+    "tailwindcss": "^2.2.2"
   },
   "keywords": [
     "gatsby"

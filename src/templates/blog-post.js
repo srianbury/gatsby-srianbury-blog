@@ -1,20 +1,28 @@
 import React from "react";
 import Layout from "../components/layout";
 import { graphql } from "gatsby";
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
 
 const BlogPost = ({ data }) => (
   <Layout title={data.markdownRemark.frontmatter.title}>
-    <h1>{data.markdownRemark.frontmatter.title}</h1>
-    {data.markdownRemark.frontmatter.banner && (
-      <img
-        src={data.markdownRemark.frontmatter.banner.publicURL}
-        alt="banner"
-        style={{
-          maxWidth: "-webkit-fill-available",
-        }}
+    <div className="py-4">
+      <div className="text-center">
+        <h1>{data.markdownRemark.frontmatter.title}</h1>
+        <h2>{data.markdownRemark.frontmatter.date}</h2>
+        {data.markdownRemark.frontmatter.banner && (
+          <div className="w-full">
+            <GatsbyImage
+              image={getImage(data.markdownRemark.frontmatter.banner)}
+              alt="banner"
+            />
+          </div>
+        )}
+      </div>
+      <div
+        className="pt-4"
+        dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }}
       />
-    )}
-    <div dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }} />
+    </div>
   </Layout>
 );
 
@@ -24,8 +32,12 @@ const query = graphql`
       html
       frontmatter {
         title
+        date(formatString: "MMMM DD, YYYY")
         banner {
           publicURL
+          childImageSharp {
+            gatsbyImageData(placeholder: TRACED_SVG, layout: FULL_WIDTH)
+          }
         }
       }
     }

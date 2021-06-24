@@ -3,34 +3,30 @@ import React from "react";
 import * as CONSTANTS from "../constants";
 
 const Header = ({ siteTitle }) => (
-  <header>
-    <ul
-      style={{
-        display: "inline-block",
-        paddingLeft: "0px",
-        margin: "0px",
-      }}
-    >
-      <NavItem>
-        <h3>
-          <Link to="/">{siteTitle}</Link>
-        </h3>
-      </NavItem>
-      <NavItem>
-        <Link to="/">Home</Link>
-      </NavItem>
-      <NavItem>
-        <Link to="/page-2">Page 2</Link>
-      </NavItem>
-      <NavItem>
-        <Link to={`/${CONSTANTS.blogPath}`}>Blog</Link>
-      </NavItem>
-    </ul>
-  </header>
+  <div className="container bg-red-300">
+    <div className="flex justify-between items-center mb-4">
+      <div className="flex justify-center items-center">
+        <Link to="/">
+          <div className="text-3xl">{siteTitle}</div>
+        </Link>
+      </div>
+      <ul className="flex m-0">
+        <NavItem>
+          <Link to="/">Home</Link>
+        </NavItem>
+        <NavItem>
+          <Link to="/page-2">Page 2</Link>
+        </NavItem>
+        <NavItem>
+          <Link to={`/${CONSTANTS.blogPath}`}>Blog</Link>
+        </NavItem>
+      </ul>
+    </div>
+  </div>
 );
 
 const NavItem = ({ children }) => (
-  <li style={{ display: "inline-block", marginRight: "10px" }}>{children}</li>
+  <li className="my-0 ml-3 hover:underline">{children}</li>
 );
 
 export default Header;

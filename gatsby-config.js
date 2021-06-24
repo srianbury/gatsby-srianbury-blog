@@ -5,6 +5,7 @@ module.exports = {
     author: `srianbury`,
   },
   plugins: [
+    `gatsby-plugin-postcss`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -26,6 +27,7 @@ module.exports = {
         plugins: [`gatsby-remark-images`, `gatsby-remark-prismjs`],
       },
     },
+    `gatsby-plugin-image`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {

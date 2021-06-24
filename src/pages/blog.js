@@ -6,14 +6,7 @@ const Blog = ({ data }) => {
   return (
     <Layout title="Blog">
       {data.allMarkdownRemark.edges.map(({ node }) => (
-        <div
-          key={node.id}
-          style={{
-            border: "2px solid black",
-            padding: "10px",
-            marginBottom: "10px",
-          }}
-        >
+        <div key={node.id}>
           <div>{node.frontmatter.title}</div>
           <div>{node.frontmatter.date}</div>
           <div>{node.excerpt}</div>
