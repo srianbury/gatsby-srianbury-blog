@@ -1,8 +1,18 @@
 module.exports = {
   siteMetadata: {
-    title: `starter`,
-    description: `Gatsby starter for (dev) blogs.`,
-    author: `srianbury`,
+    title: `srianbury`,
+    description:
+      "Software Engineer for React.js, Node.js, GraphQL, JavaScript, Python, and SQL.",
+    author: `Brian Sunbury`,
+    keywords: [
+      "web development",
+      "software engineer",
+      "reactjs",
+      "nodejs",
+      "graphql",
+      "python",
+      "sql",
+    ],
   },
   plugins: [
     `gatsby-plugin-postcss`,

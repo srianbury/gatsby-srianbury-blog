@@ -13,6 +13,9 @@ h3 {
   @apply text-lg;
   @apply font-medium;
 }
+p {
+  margin: 1em 0px;
+}
 
 .navbar {
   display: flex;

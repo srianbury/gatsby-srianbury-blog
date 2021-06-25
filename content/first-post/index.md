@@ -8,7 +8,7 @@ Can you write code that updates itself?  Apparently, yes!
 Will this artical be useful? Probaby not... But I wanted to start this blog off with something
 fun and interesting.
 
-The gist:
+## The gist:
 
 We'll start with a program who's initial `num` is 0.  Everytime the file is run we'll log the current `num`, then increment it by one.
 So the next time it's run, it should be one value bigger.
@@ -153,5 +153,6 @@ back together as `num = 1`.
 
 Voila!  Run the script a couple times and you should see the output increase each time.
 
-Thanks!
-Brian :)
+# Thanks!
+
+# Brian :)

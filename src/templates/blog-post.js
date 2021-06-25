@@ -34,7 +34,6 @@ const query = graphql`
         title
         date(formatString: "MMMM DD, YYYY")
         banner {
-          publicURL
           childImageSharp {
             gatsbyImageData(placeholder: TRACED_SVG, layout: FULL_WIDTH)
           }
