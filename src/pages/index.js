@@ -12,7 +12,12 @@ const IndexPage = () => (
       </p>
       <p>
         I was inspired to write this blog by{" "}
-        <a href="https://robinwieruch.de" target="_blank" rel="noreferrer">
+        <a
+          className="text-purple-900 hover:underline"
+          href="https://robinwieruch.de"
+          target="_blank"
+          rel="noreferrer"
+        >
           Robin Wieruch
         </a>
         . I've never talked with him, but I've read a lot of his articles
@@ -21,7 +26,12 @@ const IndexPage = () => (
       </p>
       <p>
         Another inspiration of mine is{" "}
-        <a href="https://kentcdodds.com" target="_blank" rel="noreferrer">
+        <a
+          className="text-purple-900 hover:underline"
+          href="https://kentcdodds.com"
+          target="_blank"
+          rel="noreferrer"
+        >
           Kent C. Dodds
         </a>
         . I think I first stumbled upon him because he wrote some code for my
@@ -33,6 +43,7 @@ const IndexPage = () => (
         yourself to write good code. I encourage anyone reading this to do the
         same! Feel free to clone the{" "}
         <a
+          className="text-purple-900 hover:underline"
           href="https://github.com/srianbury/gatsby-srianbury-blog"
           target="_blank"
           rel="noreferrer"

@@ -22,7 +22,10 @@ const Blog = ({ data }) => {
               </Link>
               <div>{node.frontmatter.date}</div>
               <div>{node.excerpt}</div>
-              <Link to={node.fields.slug} className="hover:underline">
+              <Link
+                to={node.fields.slug}
+                className="text-purple-900 hover:underline"
+              >
                 View
               </Link>
             </div>
