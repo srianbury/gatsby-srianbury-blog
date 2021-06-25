@@ -6127,6 +6127,13 @@ gatsby-remark-images@^5.4.1:
     unist-util-select "^3.0.4"
     unist-util-visit-parents "^3.1.1"
 
+gatsby-remark-line-breaks@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/gatsby-remark-line-breaks/-/gatsby-remark-line-breaks-1.0.0.tgz#60f838433acc24ddf425f4d135e12cea634bc7a3"
+  integrity sha512-chLmEttxDDLGy18nhOlfPFDmzt8EhLEnj1RSxvdtskpIS8F0M3vIhRN9J1MFB5s+19OeLzscubrjT+kK4gKrgw==
+  dependencies:
+    remark-breaks "^1.0.5"
+
 gatsby-remark-prismjs@^5.3.0:
   version "5.3.0"
   resolved "https://registry.yarnpkg.com/gatsby-remark-prismjs/-/gatsby-remark-prismjs-5.3.0.tgz#5b082f03daec8d281d07b60b71428f6ac37e1af2"
@@ -11191,6 +11198,11 @@ regjsparser@^0.6.4:
   integrity sha512-ZqbNRz1SNjLAiYuwY0zoXW8Ne675IX5q+YHioAGbCw4X96Mjl2+dcX9B2ciaeyYjViDAfvIjFpQjJgLttTEERQ==
   dependencies:
     jsesc "~0.5.0"
+
+remark-breaks@^1.0.5:
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/remark-breaks/-/remark-breaks-1.0.5.tgz#e9785f8b174f45c05af542fbeb18354b766e1139"
+  integrity sha512-lr8+TlJI273NjEqL27eUthPYPTCgXEj4NaLbnazS3bQaQL2FySlsbtgo52gE36fE1gWeQgkn1VdmWsoT+uA7FA==
 
 remark-footnotes@^3.0.0:
   version "3.0.0"

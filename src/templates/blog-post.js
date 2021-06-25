@@ -5,10 +5,10 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image";
 
 const BlogPost = ({ data }) => (
   <Layout title={data.markdownRemark.frontmatter.title}>
-    <div className="py-4">
+    <div className="py-4 mx-auto max-w-screen-md">
       <div className="text-center">
-        <h1>{data.markdownRemark.frontmatter.title}</h1>
-        <h2>{data.markdownRemark.frontmatter.date}</h2>
+        <h1 className="capitalize">{data.markdownRemark.frontmatter.title}</h1>
+        <h3>{data.markdownRemark.frontmatter.date}</h3>
         {data.markdownRemark.frontmatter.banner && (
           <div className="w-full">
             <GatsbyImage
